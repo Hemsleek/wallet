@@ -4,10 +4,7 @@ import "./Tabs.scss";
 const Tabs = () => {
   return (
     <div className="Tabs">
-      <NavLink
-        className={({ isActive }) => `tab-wrapper ${isActive && `active-link`}`}
-        to="/"
-      >
+      <NavLink to="/" className="tab-wrapper">
         {({ isActive }) => (
           <img
             src={`/vectors/wallet${isActive ? "-active" : ""}.svg`}

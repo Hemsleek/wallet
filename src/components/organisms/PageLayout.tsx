@@ -25,7 +25,7 @@ const PageLayout = ({
           flexGrow: 1,
           overflow: "auto",
           background: "var(--wallet-bg)",
-          paddingTop: "1rem",
+          padding: "1rem  1rem 0",
         }}
       >
         {children}

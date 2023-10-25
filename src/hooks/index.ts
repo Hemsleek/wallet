@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 export const useMenuClickAway = (
   dataSetName: string,
@@ -8,7 +8,7 @@ export const useMenuClickAway = (
 ) => {
   const menuRef = useRef<any>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleMenuClickAway = (event: any) => {
       if (!menuState) return null;
       if (event.target.dataset.name === dataSetName) return null;

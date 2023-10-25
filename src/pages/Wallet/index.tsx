@@ -7,12 +7,15 @@ import PageLayout from "../../components/organisms/PageLayout";
 import WalletGraph from "../../components/organisms/WalletGraph";
 
 import "./Wallet.scss";
-import { walletTabData } from "../../constantData";
+import { crypto, walletTabData } from "../../constantData";
 
 const Wallet = () => {
   const [activeTab, setActiveTab] = useState<(typeof walletTabData)[number]>(
     walletTabData[0]
   );
+
+  const activeData = crypto[activeTab];
+
   return (
     <PageLayout pageTitle="bitcoin wallet">
       <div className="Wallet">
@@ -21,10 +24,10 @@ const Wallet = () => {
           <WalletTab activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
         <div className="graph-wrapper">
-          <WalletGraph />
+          <WalletGraph activeData={activeData} />
         </div>
         <div className="buy-sell">
-          <BuySellCard label="Buy BTC">
+          <BuySellCard label={`Buy ${activeData.shortName}`}>
             <CoinCurrencyIcon bg="linear-gradient(0deg, #1d71f1 0%, #17c7fb 100%)">
               <img
                 src="/vectors/dollar.svg"
@@ -33,7 +36,7 @@ const Wallet = () => {
               />
             </CoinCurrencyIcon>
           </BuySellCard>
-          <BuySellCard label="Sell BTC">
+          <BuySellCard label={`Sell ${activeData.shortName}`}>
             <CoinCurrencyIcon bg="linear-gradient(0deg, #fa23a2 0%, #ff677c 100%)">
               <img
                 src="/vectors/dollar.svg"

@@ -1,31 +1,36 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { XAxis, YAxis, AreaChart, Area, ResponsiveContainer } from "recharts";
 
 import "./WalletGraph.scss";
-import { graphData } from "../../../constantData";
 
-const WalletGraph = () => {
+const WalletGraph = ({ activeData }: { activeData: any }) => {
   return (
     <div className="WalletGraph">
       <div className="top-labels">
         <div className="info lower">
           <span className="indicator" />
-          <span>Lower: $4.895</span>
+          <span>Lower: ${activeData.lower}</span>
         </div>
         <div className=" info higher">
           <span className="indicator" />
-          <span>Higher: $6.857</span>
+          <span>Higher: ${activeData.higher}</span>
         </div>
       </div>
       <div className="graph-wrapper">
         <div className="coin-rate">
-          <span className="indicator" />
-          <span>1 BTC = $5.483</span>
+          <span
+            style={{ background: activeData.strokeColor }}
+            className="indicator"
+          />
+          <span>
+            1 {activeData.shortName} = ${activeData.amount}
+          </span>
         </div>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             width={500}
             height={200}
-            data={graphData}
+            data={activeData.graphData}
             syncId="anyId"
             margin={{
               top: 10,
@@ -39,9 +44,9 @@ const WalletGraph = () => {
             <Area
               type="basis"
               dataKey="pv"
-              stroke="#ffa92b"
+              stroke={activeData.strokeColor}
               strokeWidth={4}
-              fill="#fff7ee"
+              fill={activeData.fillColor}
             />
           </AreaChart>
         </ResponsiveContainer>

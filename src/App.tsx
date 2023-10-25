@@ -1,7 +1,9 @@
-import "./App.css";
+import AppRoutes from "./AppRoutes";
+
+import "./App.scss";
 
 function App() {
-  return <>Hello Wallet</>;
+  return <AppRoutes />;
 }
 
 export default App;

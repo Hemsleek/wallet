@@ -1,0 +1,31 @@
+.Tabs{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // column-gap: 2rem;
+    padding:0.7rem 1.5rem;
+
+    .tab-wrapper{
+        padding:0.7rem 1.5rem;
+        transition: background-color 0.7s ease-in-out;
+
+        &:hover{
+            background-color: var(--wallet-bg);
+        }
+    }
+    
+    
+    .active-link {
+        // background-color: red;
+    }
+
+    img{
+        width:1.68rem;
+        height:1.68rem;
+    }
+
+
+
+
+}

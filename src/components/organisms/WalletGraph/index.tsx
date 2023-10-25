@@ -17,6 +17,10 @@ const WalletGraph = () => {
         </div>
       </div>
       <div className="graph-wrapper">
+        <div className="coin-rate">
+          <span className="indicator" />
+          <span>1 BTC = $5.483</span>
+        </div>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             width={500}

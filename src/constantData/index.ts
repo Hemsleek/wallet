@@ -3,15 +3,15 @@ export const navOptions = "edit, Courier info, Share, Remove".split(",");
 export const graphData = [
   {
     name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    uv: 3490,
+    pv: 4300,
+    amt: 2100,
   },
   {
     name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    uv: 2390,
+    pv: 4300,
+    amt: 2100,
   },
   {
     name: "Page C",

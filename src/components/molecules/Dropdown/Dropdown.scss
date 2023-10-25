@@ -22,7 +22,9 @@
         border-bottom:1px solid var(--wallet-gray);
         font-size:1rem;
         
-
+        &.last-index{
+            border-bottom-color: transparent;
+        }
 
         
 

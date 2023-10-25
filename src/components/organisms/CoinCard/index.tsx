@@ -10,8 +10,6 @@ const CoinCard = () => {
     setShowMore((currentValue) => !currentValue);
   };
 
-  console.log({ showMore });
-
   return (
     <div className="CoinCard">
       <div className="coin-details">

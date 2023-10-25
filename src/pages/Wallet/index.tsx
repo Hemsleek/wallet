@@ -26,12 +26,20 @@ const Wallet = () => {
         <div className="buy-sell">
           <BuySellCard label="Buy BTC">
             <CoinCurrencyIcon bg="linear-gradient(0deg, #1d71f1 0%, #17c7fb 100%)">
-              <span className="currency-fiat">$</span>
+              <img
+                src="/vectors/dollar.svg"
+                alt="dollar-icon"
+                className="fiat-crypto-size"
+              />
             </CoinCurrencyIcon>
           </BuySellCard>
           <BuySellCard label="Sell BTC">
             <CoinCurrencyIcon bg="linear-gradient(0deg, #fa23a2 0%, #ff677c 100%)">
-              <span className="currency-fiat">$</span>
+              <img
+                src="/vectors/dollar.svg"
+                alt="dollar-icon"
+                className="fiat-crypto-size"
+              />
             </CoinCurrencyIcon>
           </BuySellCard>
         </div>

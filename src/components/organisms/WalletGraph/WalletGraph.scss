@@ -1,14 +1,12 @@
 .WalletGraph {
-
-    width: 100%;
-    height: 18rem;
-    background-color: #fff;
-    border-radius: var(--radius);
-    padding: 3rem 2rem 0 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+  width: 100%;
+  height: 18rem;
+  background-color: #fff;
+  border-radius: var(--radius);
+  padding: 3rem 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .top-labels {
     display: flex;
@@ -44,5 +42,26 @@
 
   .graph-wrapper {
     flex-grow: 1;
+    position: relative;
+
+    .coin-rate {
+      position: absolute;
+      z-index: 100;
+      font-size: 1.1rem;
+      color: var(--wallet-black);
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      column-gap: 0.7rem;
+      bottom:2rem;
+      left:2.3rem;
+
+      .indicator {
+        width: 9.3px;
+        height: 9.3px;
+        border-radius: 50%;
+        background-color: var(--wallet-yellow);
+      }
+    }
   }
 }

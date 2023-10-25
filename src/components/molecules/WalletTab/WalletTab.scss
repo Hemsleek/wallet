@@ -1,0 +1,33 @@
+.WalletTab{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    .tab{
+        padding:0.5rem 1rem;
+        font-size:1.04rem;
+        font-weight:bold;
+        color:var(--wallet-gray);
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover{
+            background:rgba($color: #ffffff, $alpha: 0.4);
+        }
+
+        &.active {
+            background: var(--wallet-gray);
+
+            span{
+                color:#fff;
+            }
+        }
+
+
+        span{
+
+
+        }
+    }
+}

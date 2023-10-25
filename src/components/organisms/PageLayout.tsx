@@ -12,8 +12,8 @@ const PageLayout = ({
   return (
     <div
       style={{
-        width: "100dvw",
-        height: "100dvh",
+        width: "100%",
+        height: "100%",
         display: "flex",
         flexDirection: "column",
         overflow: "hidden",
@@ -25,7 +25,7 @@ const PageLayout = ({
           flexGrow: 1,
           overflow: "auto",
           background: "var(--wallet-bg)",
-          padding: "1rem  1rem 0",
+          padding: "1rem  1rem 1.5rem",
         }}
       >
         {children}

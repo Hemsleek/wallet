@@ -9,9 +9,11 @@
     .tab-wrapper{
         padding:0.7rem 1.5rem;
         transition: background-color 0.7s ease-in-out;
+        border-radius: 4px;
 
         &:hover{
             background-color: var(--wallet-bg);
+
         }
     }
     

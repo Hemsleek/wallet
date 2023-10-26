@@ -5,9 +5,9 @@
   flex-direction: column;
   overflow: hidden;
 
-@media screen and (min-width:1280px) {
-        flex-direction: row;
-    }
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
 
   .content-wrapper {
     flex-grow: 1;
@@ -15,10 +15,9 @@
     flex-direction: column;
     overflow: hidden;
 
-    @media screen and (min-width:1280px) {
-            order: 2;
-        }
-
+    @media screen and (min-width: 1280px) {
+      order: 2;
+    }
   }
 
   main {
@@ -28,10 +27,9 @@
     padding: 1rem 1rem 1.5rem;
   }
 
-  .tabs-wrapper{
-
-    @media screen and (min-width:1280px) {
-            order: 1;
-        }
+  .tabs-wrapper {
+    @media screen and (min-width: 1280px) {
+      order: 1;
+    }
   }
 }

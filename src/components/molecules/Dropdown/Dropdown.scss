@@ -1,32 +1,27 @@
-.Dropdown{
-        background:#fff;
-        border-radius: 10px;
-        position: absolute;
-        right: -100%;
-        z-index:100;
-        transition: right 0.7s ease-in-out;
-        overflow: hidden;
-        padding:0.5rem 0;
-        box-shadow: var(--shadow);
-        
-        
-            &.show{
-                right:1rem;
-            }
-        
+.Dropdown {
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  right: -100%;
+  z-index: 100;
+  transition: right 0.7s ease-in-out;
+  overflow: hidden;
+  padding: 0.5rem 0;
+  box-shadow: var(--shadow);
 
-    .option{
-        padding: 1rem 2rem;
-        margin-left:1rem;
-        text-transform: capitalize;
-        border-bottom:1px solid var(--wallet-gray);
-        font-size:1rem;
-        
-        &.last-index{
-            border-bottom-color: transparent;
-        }
+  &.show {
+    right: 1rem;
+  }
 
-        
+  .option {
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--wallet-gray);
+    font-size: 1rem;
 
+    &.last-index {
+      border-bottom-color: transparent;
     }
+  }
 }

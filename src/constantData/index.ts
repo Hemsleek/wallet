@@ -58,7 +58,7 @@ export const crypto = {
   },
   Week: {
     name: "Ethereum",
-    shortName: "ETH",
+    shortName: "BTC",
     lower: 2.345,
     higher: 4.367,
     amount: 3.546,
@@ -111,7 +111,9 @@ export const crypto = {
   },
   Month: {
     name: "Litecoin",
-    shortName: "LT",
+
+    shortName: "BTC",
+
     lower: 1.896,
     higher: 2.122,
     amount: 4.746,
@@ -164,7 +166,9 @@ export const crypto = {
   },
   Year: {
     name: "Ripple",
-    shortName: "RP",
+
+    shortName: "BTC",
+
     lower: 500,
     higher: 1.2,
     amount: 1.246,

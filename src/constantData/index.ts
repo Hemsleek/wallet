@@ -62,8 +62,8 @@ export const crypto = {
     lower: 2.345,
     higher: 4.367,
     amount: 3.546,
-    strokeColor: "#82ca9d",
-    fillColor: "#82ca9d",
+    strokeColor: "#ffa92b",
+    fillColor: "#fff7ee",
     graphData: [
       {
         name: "Page A",
@@ -115,8 +115,8 @@ export const crypto = {
     lower: 1.896,
     higher: 2.122,
     amount: 4.746,
-    strokeColor: "#ee225d",
-    fillColor: "#e56086",
+    strokeColor: "#ffa92b",
+    fillColor: "#fff7ee",
     graphData: [
       {
         name: "Page A",
@@ -168,8 +168,8 @@ export const crypto = {
     lower: 500,
     higher: 1.2,
     amount: 1.246,
-    strokeColor: "#4427ff",
-    fillColor: "#577cd9",
+    strokeColor: "#ffa92b",
+    fillColor: "#fff7ee",
     graphData: [
       {
         name: "Page A",

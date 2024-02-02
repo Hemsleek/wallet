@@ -16,7 +16,7 @@ const CoinCurrencyIcon = ({
       style={{
         background: bg,
         borderColor,
-        borderWidth: 1,
+        borderWidth: 0,
         borderStyle: "solid",
       }}
       className="CoinCurrencyIcon"
